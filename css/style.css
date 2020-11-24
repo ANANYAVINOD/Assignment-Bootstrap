@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    margin: 0 auto;
+}
+#title {
+    font-family: 'icomoon'; 
+}  
+
+.container {
+    background-image: url('../images/hero-bg2.jpg');
+    filter: brightness(50%); 
+    height: 550px;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+}
+
+.btn-opacity {
+    background-color: transparent;
+}
+
+.block-one {
+    background-color: #F4F7F8;
+}
