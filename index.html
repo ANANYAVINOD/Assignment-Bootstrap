@@ -7,37 +7,63 @@
     <title>Foundapp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header w-100">
-        <div class="container">
-            <div class="d-flex justify-content-between m-10 p-5 w-75 mx-auto border-bottom border-dark">
-                <div>
-                    <h1 id="title" class="text-white">Found<b>app.</b></h1>
-                </div>
-                <div class="mt-4">
-                    <p>menu</p>
-                </div>
+    <div class="top-sec">
+        <header class="header container">
+            <div class="row w-100">
+                <span class="col"><a href="#"><img src="./images/logo.svg"></a></span>
+                <span class="col text-right mt-3">
+                    <button class="openbtn" onclick="openNav()"><i class="fa fa-reorder" style="font-size:24px"></i></button> 
+                </span>
             </div>
-            <div class="row m-10 p-5 w-75 mx-auto ">
-                <div class="col-6 ">
-                    <h2>Experience a new way to showcase your app.</h2>
-                    <p>A landing page template made with the powerful new features of Foundation 6. Focus on your application and let 
-                        Foundapp do the rest. Grab it today...<b>It's FREE! </b></b></p>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-6">
-                    <button class="btn btn-primary"><span class="glyphicon glyphicon-cloud-download"></span> Download app</button>
-                    <button class="btn btn-default btn-opacity border-light"><span class="glyphicon glyphicon-play"></span> Watch Video</button>
-                </div>
+        </header>
+
+        <div id="sideBar" class="sidebar">
+            <button type="button" class="closebtn" onclick="closeNav()"><i class="fa fa-close close-icon"></i></button>
+            <div class="row icon-bar border-bottom border-secondary">
+                <a href="#"><i class="fa fa-github-alt"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">How it works</a>
+            <a href="#">Benefits</a>
+            <a href="#">Features</a>
+            <a href="#">Happy Users</a>
+            <a class="text-primary border-bottom border-secondary" href="#">
+                <span class="d-flex justify-content-between">
+                    <p>Download App</p>
+                    <i class="fa fa-download mt-1" style="font-size:17px"></i>
+                </span>
+            </a>
+            <p class="text-secondary ml-4 m-3 pt-5">you@yourmail.com</p>
+            <p class="text-secondary ml-4 m-1">Fake Address 1A, California USA, 111188</p>
+        </div>
+
+        <div class="container banner">
+            <div class="col-6">
+                <h2>Experience a new way to showcase your app.</h2><hr>
+                <p>A landing page template made with the powerful new features of Foundation 6. Focus on your application and let 
+                    Foundapp do the rest. Grab it today...<b>It's FREE! </b></b></p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6">
+                <button class="btn btn-primary"><span class="glyphicon glyphicon-cloud-download"></span> Download app</button>
+                <button class="btn btn-default btn-opacity border-light text-white"><span class="glyphicon glyphicon-play"></span> Watch Video</button>
             </div>
         </div>
-    </header>
+    </div>
+
     <main>
         <div class="content">
-            <div class="row w-75 p-5 mx-auto">
+            <div class="row w-100 p-5 mx-auto container">
                 <div class="col-3 m-10 border-right border-secondary">
                     <p class="text-info display-3">40250</p>
                     <p class="h3 mt-0">Downloads so far.</p>
@@ -53,33 +79,34 @@
                     </div>
                 </div>
             </div>
-            <div class="block-one">
+            <div class="block-one container">
                 <div class="row p-5 w-100">
                     <div class="col-6 p-5">
                         <img class="w-100" src="./images/app-presentation-1.png">
                     </div>
-                    <div class="col-6 p-5">
-                        <p class="h2 m-5">Show how great and easy it is to use.</p>
-                        <p class="h4 m-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    <div class="col-6 p-3">
+                        <p class="h2">Show how great and easy it is to use.</p>
+                        <hr>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                            Quibusdam voluptate ducimus unde eveniet id illo eum eius accusamus incidunt.</p>
                         <div class="row">
-                            <div class="col">
+                            <div class="col download">
                                 <p class="h4 mb-5"><b>1. Download</b></p>
                                 <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Sunt doloribus in nesciunt inventore.</p>
                             </div>
-                            <div class="col">
+                            <div class="col customise">
                                 <p class="h4 mb-5"><b>2. Customise</b></p>
                                 <p class="h4">Illium aspernatur repellendus?
-                                    Laundantium recusandae ipsa volaptus ab aliquid, fuga voluptates, ut .</p>
+                                    Laundantium recusandae ipsa volaptus ab aliquid, fuga voluptates, ut.</p>
                             </div>
                             <div class="w-100"></div>
-                            <div class="col">
+                            <div class="col deploy">
                                 <p class="h4 mb-5"><b>3. Deploy</b></p>
                                 <p class="h4">Dignissimos consequatur aperiam. 
                                     Mairoes odio esse est placeat debitis ipsa quidem aut laudantium.</p>
                             </div>
-                            <div class="col">
+                            <div class="col success">
                                 <p class="h4 mb-5"><b>4. Success</b></p>
                                 <p class="h4">Perferendis dolores quibusdam porro mollitia incidunt atque at laudantium earum excepturi.</p>
                             </div>
@@ -87,7 +114,209 @@
                     </div>
                 </div>
             </div>
+
+            <div class="block-two container">
+                <div class="row w-100">
+                    <div class="col-6 md-offset-6">
+                        <p class="h2">Outline your app's unique benefits.</p>
+                        <hr>
+                        <p class="h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Quibusdam voluptate ducimus unde eveniet id illo eum eius accusamus incidunt.</p>
+                        <div class="row w-100">
+                            <div class="col-1 mt-3">
+                                <span class="glyphicon glyphicon-ok text-primary"></span>
+                            </div>
+                            <div class="col-11">
+                                <p class="h4"><b>Free For Ever</b></p>
+                                <p class="h4 text-secondary">Ariatur ipsa quisw exercitationem deserunt consequuntur dolorum, possimus magni molestiae.</p>
+                            </div>
+                        </div>    
+                        <div class="row w-100">
+                            <div class="col-1 mt-3">
+                                <span class="glyphicon glyphicon-ok text-primary"></span>
+                            </div>
+                            <div class="col-11">
+                                <p class="h4"><b>Cross Browser Compatibility</b></p>
+                                <p class="h4 text-secondary">Ariatur ipsa quisw exercitationem deserunt consequuntur dolorum, possimus magni molestiae</p>
+                            </div>
+                        </div>  
+                        <div class="row w-100">
+                            <div class="col-1 mt-3">
+                                <span class="glyphicon glyphicon-ok text-primary"></span>
+                            </div>
+                            <div class="col-11">
+                                <p class="h4"><b>Retina Ready</b></p>
+                                <p class="h4 text-secondary">Ariatur ipsa quisw exercitationem deserunt consequuntur dolorum, possimus magni molestiae.</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-6 p-4 mt-5">
+                        <img class="w-100" src="./images/app-presentation-2.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-three">
+                <div class="row w-100">
+                    <div class="col-3">
+                        <p class="h2">All the amazing features you've ever wanted!</p>
+                        <hr>
+                        <button class="btn btn-primary">Download app</button>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>Made with Bootstrap 4</b></p>
+                                <p class="h4 para-three">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Sunt doloribus in nesciunt inventore.</p>
+                            </div>
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>Motion UI Animations</b></p>
+                                <p class="h4 para-three">Illium aspernatur repellendus?
+                                    Laundantium recusandae ipsa volaptus ab aliquid, fuga voluptates, ut.</p>
+                            </div>
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>100% Responsive</b></p>
+                                <p class="h4 para-three">Dignissimos consequatur aperiam. 
+                                    Mairoes odio esse est placeat debitis ipsa quidem aut laudantium.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>2 Header Variations</b></p>
+                                <p class="h4 para-three">Perferendis dolores quibusdam porro mollitia incidunt atque at laudantium earum excepturi.</p>
+                            </div>
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>Fully Customizable</b></p>
+                                <p class="h4 para-three">Perferendis dolores quibusdam porro mollitia incidunt atque at laudantium earum excepturi.</p>
+                            </div>
+                            <div class="col">
+                                <p class="h4 mb-5 list-three"><b>Clean Code</b></p>
+                                <p class="h4 para-three">Perferendis dolores quibusdam porro mollitia incidunt atque at laudantium earum excepturi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-four">
+                <div class="container">
+                    <p class="h2 text-center">Over 5,000 active users!</p>
+                    <hr>
+                    <p class="h4 text-center w-75 mb-5 mx-auto">Alias, quibusdam ex aspernatur ratione dolore consequuntur, iusto voluptatem cumque
+                        repundiandae voluptas vel impedit nam facilis velit excepturi nisi. Laborum, corrupti, quia!</p>
+                    <div class="row">
+                        <div class="col testimonial-block border-bottom border-right">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-3.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>ANNA S.</b></p>
+                                    <p class="h5 company">XYZ Inc</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Incidunt delenti blanditis quas aperiam recusandae consequatur ullam
+                                   quibusdam cum libero illo rerum repellendus!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col testimonial-block border-bottom border-right">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-1.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>PAUL B.</b></p>
+                                    <p class="h5 company">Company Inc</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Aenean commondo ligula eget dolor. Aenean massa. Cum socilis natoque penatibus et magnis dis
+                                   parturient montes."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col testimonial-block border-bottom">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-5.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>CHRISTINA G.</b></p>
+                                    <p class="h5 company">Brand</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Cras dapibus. Vivamus elementum semper nisi. Aenean voluptate eleifend tellus.
+                                   Aenean leo ligula porttitor eu, consequat vitae, eleifend ac, enim"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col testimonial-block border-right">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-2.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>ANDREW CH.</b></p>
+                                    <p class="h5 company">ABC Inc</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                   Etiam ultricies nisi. Nam eget  dui. Etiam rhoncus."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col testimonial-block border-right">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-4.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>STEVEN D.</b></p>
+                                    <p class="h5 company">Agency Inc</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. 
+                                   Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ul libero venenatis faucibus."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col testimonial-block">
+                            <div class="row row-one">
+                                <div class="col-3">
+                                    <img src="./images/testimonialImg-6.png">
+                                </div>
+                                <div class="col">
+                                    <p class="h5 name"><b>LAURA K.</b></p>
+                                    <p class="h5 company">Studio Inc</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="h4 testimonial">
+                                   "Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+                                   Sed fringilla mauris sit amet  nibh. Donec sodales sagittis magna."
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="./script.js"></script>
+
 </body>
 </html>

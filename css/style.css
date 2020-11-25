@@ -8,21 +8,38 @@
     font-style: normal;
     font-display: swap;
 }
-
 .header {
-    margin: 0 auto;
+    padding: 40px;
+    border-bottom: 1px solid #404552;
+    margin-bottom: 20px;
 }
-#title {
-    font-family: 'icomoon'; 
-}  
 
-.container {
+.icon-bar {
+    margin: 10px;
+}
+
+.icon-bar i {
+    font-size:17px;
+    color:#7D838C
+}
+
+.top-sec {
     background-image: url('../images/hero-bg2.jpg');
-    filter: brightness(50%); 
-    height: 550px;
+    height: 800px;
     background-size: cover;
     position: relative;
     color: #ffffff;
+}
+
+.top-sec::before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(52,58,69, 0.8);
 }
 
 .btn-opacity {
@@ -32,3 +49,140 @@
 .block-one {
     background-color: #F4F7F8;
 }
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right:0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 10px 20px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #293342;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+    background-color: #444 ;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+    border: none;
+  }
+
+  .close-icon i:hover {
+    border: 1 px solid #000000;
+  }
+
+  .openbtn {
+      background-color: transparent;
+      border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  .banner {
+    margin-top: 80px;
+  }
+
+  .banner h2 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  
+  hr {
+      width:12%;
+      text-align:left;
+      margin-left:0;
+      background-color: #17A2B8;
+      height:2px;
+      border: none;
+  }
+
+  .banner p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+  }
+  
+  .block-two {
+      margin-bottom: 50px;
+      margin-top: 50px;
+  }
+
+  .block-three {
+      background-color: #273140;
+      padding: 60px 80px 60px 80px;
+  }
+
+  .block-three .h2 {
+      line-height: 1.5;
+      color: #ffffff;
+  }
+
+  .block-three .list-three {
+      color: #ffffff;
+  }
+
+  .block-three .para-three {
+      color: #A0A5AB;
+      line-height: 1.5;
+      font-size: 16px;
+  }
+
+  .block-three hr {
+    width:20%;
+    text-align:left;
+    margin-left:0;
+    background-color: #ffffff;
+    height:2px;
+    border: none;
+  }
+
+  .block-four {
+      background-color: #F4F7F8;
+      padding-top: 50px;
+  }
+
+  .block-four hr {
+      margin-left: 43%;
+  }
+
+  .testimonial-block {
+      padding: 30px;
+  }
+
+  .testimonial-block img {
+      border-radius: 50%;
+  }
+
+  .row-one {
+      margin-bottom: 20px;
+  }
+
+  .testimonial {
+      color: #979DA4;
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
