@@ -8,10 +8,16 @@
     font-style: normal;
     font-display: swap;
 }
+
 .header {
     padding: 40px;
     border-bottom: 1px solid #404552;
     margin-bottom: 20px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .icon-bar {
@@ -48,6 +54,18 @@
 
 .block-one {
     background-color: #F4F7F8;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.block-one img {
+    margin-left: -30%;
+    width: 130%;
+}
+
+.block-two img {
+    margin-right: -30%;
+    width: 122%;
 }
 
 .sidebar {
@@ -124,10 +142,86 @@
       line-height: 1.7;
       margin-bottom: 30px;
   }
-  
+
+  .client-row {
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
+  .col-number {
+      border-right: 1px solid lightgrey;
+  }
+
+  .text-download {
+      font-size: 20px;
+  }
+
+  .col-inner {
+      position: relative;
+  }
+
+  .col-inner p {
+      padding: 10px 0;
+      font-size: 13px;
+  }
+
+  .block-one p {
+      line-height: 1.5;
+  }
+
+  .download::before {
+    position: absolute;
+    content: "\f0ed";
+    top: -20px;
+    left: 10px; 
+    color: #DFE2E4; 
+    font-size: 70px;
+    font-family: 'FontAwesome';
+  }
+
+  .customise::before {
+    position: absolute;
+    content: "\f08a";
+    top: -20px;
+    left: 10px; 
+    color: #DFE2E4; 
+    font-size: 70px;
+    font-family: 'FontAwesome';
+  }
+
+  .deploy::before {
+    position: absolute;
+    content: "\f13d";
+    top: -20px;
+    left: 10px; 
+    color: #DFE2E4; 
+    font-size: 70px;
+    font-family: 'FontAwesome';
+  }
+
+  .success::before {
+    position: absolute;
+    content: "\f201";
+    top: -20px;
+    left: 10px; 
+    color: #DFE2E4; 
+    font-size: 70px;
+    font-family: 'FontAwesome';
+  }
+
   .block-two {
-      margin-bottom: 50px;
-      margin-top: 50px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+  .block-two p {
+      line-height: 1.5;
+      font-size: 13px;
+  }
+
+  .block-two-list {
+      border-bottom: 1px solid #DFE2E4;
+      padding: 10px 0;
   }
 
   .block-three {
@@ -135,7 +229,7 @@
       padding: 60px 80px 60px 80px;
   }
 
-  .block-three .h2 {
+  .block-three h2 {
       line-height: 1.5;
       color: #ffffff;
   }
@@ -144,10 +238,10 @@
       color: #ffffff;
   }
 
-  .block-three .para-three {
+  .block-three p {
       color: #A0A5AB;
       line-height: 1.5;
-      font-size: 16px;
+      padding-bottom: 15px;
   }
 
   .block-three hr {
@@ -159,13 +253,88 @@
     border: none;
   }
 
+  .col-one::before {
+    position: absolute;
+    content: "\f072";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+ 
+  .col-two::before {
+    position: absolute;
+    content: "\f534";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+
+  .col-three::before {
+    position: absolute;
+    content: "\f109";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+
+  .col-four::before {
+    position: absolute;
+    content: "\f219";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+
+  .col-five::before {
+    position: absolute;
+    content: "\f040";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+
+  .col-six::before {
+    position: absolute;
+    content: "\f121";
+    top: -17px;
+    left: 10px; 
+    color: #142138; 
+    font-size: 65px;
+    font-family: 'FontAwesome';
+  }
+
   .block-four {
       background-color: #F4F7F8;
       padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  .block-four h5 {
+    line-height: 1.5;
   }
 
   .block-four hr {
-      margin-left: 43%;
+      margin-left: 46%;
+      width: 6%;
+  }
+
+  .block-four p {
+      font-size: 13px;
+  }
+
+  .block-four h5 {
+      margin-top: 0;
+      margin-bottom: 0;
   }
 
   .testimonial-block {
@@ -184,5 +353,107 @@
       color: #979DA4;
       font-size: 15px;
       line-height: 1.5;
+      padding: 0;
   }
 
+  .block-five {
+      background-image: url('../images/hero-bg1.jpg');
+      height: 500px;
+      background-size: cover;
+      position: relative;
+      color: #ffffff;
+      padding-top: 50px;
+  }
+
+  .block-five::before {
+    content:" ";
+    display:block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(49,129,238, 0.6)
+  }
+
+  .container-block-five {
+      color: #ffffff;
+      position: relative;
+  }
+
+  .block-five hr {
+      margin-left: 45%;
+      background-color: #ffffff;
+      width: 8%;
+  }
+
+  .block-five h4 {
+      line-height: 1.5;
+  }
+
+  .block-five button {
+      height: 43px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 0;
+  }
+
+  .footer {
+      background-color: #273140;
+      padding-top: 60px;
+      color: #ffffff;
+  }
+
+  .footer .container {
+    padding-bottom: 100px;
+      border-bottom: 0.2px solid #000000;
+  }
+
+  .footer-text {
+      font-size: 13px;
+      width: 70%;
+      line-height: 1.5;
+  }
+
+  .text-two {
+      right: 10%;
+  }
+
+  .input-email {
+      height: 35px;
+  }
+
+  input[type=email]::placeholder {
+      font-size: 12px;
+  }
+
+  .footer-btn {
+      border-radius: 0;
+  }
+
+  .icon {
+      width: 30%;
+  }
+
+  .icon-bar-one {
+      padding-bottom: 15px;
+  }
+
+  .footer hr {
+      background-color: #ffffff;
+      width: 40%;
+      height: 1px;
+  }
+
+  .footer .copyright {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 12px;
+  }
+
+  .copyright .sec-two {
+      border-bottom: 1px dotted #ffffff;
+      border-left: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 0 3px 0 3px;
+  }
