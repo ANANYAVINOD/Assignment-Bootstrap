@@ -356,6 +356,21 @@ body {
       padding: 0;
   }
 
+  .test-one,
+  .test-two {
+      border-right: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+  }
+
+  .test-three {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .test-four,
+  .test-five {
+      border-right: 1px solid lightgrey;;
+  }
+
   .block-five {
       background-image: url('../images/hero-bg1.jpg');
       height: 500px;
@@ -457,3 +472,41 @@ body {
       border-right: 1px solid #ffffff;
       padding: 0 3px 0 3px;
   }
+
+/*****************MEDIA QUERIES******************/
+
+@media (max-width: 1300px) {
+    .block-one img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .block-two img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .block-five {
+        height: auto;
+        padding-bottom: 50px
+    }
+}
+
+@media (max-width: 1000px) {
+    .testimonial-block {
+        border: none;
+    }
+
+    .text-two {
+        right: 0;
+        padding-bottom: 20px;
+    }
+
+    .icon {
+        padding: 0 45px;
+    }
+
+    .footer .container {
+        padding-bottom: 50px;
+    }
+}
