@@ -497,6 +497,15 @@ body {
         border: none;
     }
 
+    .testimonial,
+    .row-one {
+        text-align: center;
+    }
+
+    .top-sec {
+        height: 650px;
+    }
+
     .text-two {
         right: 0;
         padding-bottom: 20px;
