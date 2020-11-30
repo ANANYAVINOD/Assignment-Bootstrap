@@ -9,15 +9,17 @@
     font-display: swap;
 }
 
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .header {
     padding: 40px;
     border-bottom: 1px solid #404552;
     margin-bottom: 20px;
-}
-
-body {
-    overflow-x: hidden;
-    margin: 0 auto;
 }
 
 .icon-bar {
@@ -165,6 +167,11 @@ body {
       font-size: 13px;
   }
 
+  .col-inner h4,
+  .benefits-inner h4 {
+      font-weight: bold;
+  }
+
   .block-one p {
       line-height: 1.5;
   }
@@ -224,9 +231,23 @@ body {
       padding: 10px 0;
   }
 
+  .benefits-inner {
+    position: relative;
+    margin-left: 40px;
+}
+
+  .block-two-list::before {
+  position: absolute;
+  content: "\f00c";
+  top: 15px;
+  left: 0px; 
+  color: #0275d8; 
+  font-size: 18px;
+  font-family: 'FontAwesome';
+ }
+
   .block-three {
       background-color: #273140;
-      padding: 60px 80px 60px 80px;
   }
 
   .block-three h2 {
@@ -319,10 +340,6 @@ body {
       padding-bottom: 50px;
   }
 
-  .block-four h5 {
-    line-height: 1.5;
-  }
-
   .block-four hr {
       margin-left: 46%;
       width: 6%;
@@ -330,11 +347,7 @@ body {
 
   .block-four p {
       font-size: 13px;
-  }
-
-  .block-four h5 {
-      margin-top: 0;
-      margin-bottom: 0;
+      line-height: 1.5;
   }
 
   .testimonial-block {
@@ -354,6 +367,10 @@ body {
       font-size: 15px;
       line-height: 1.5;
       padding: 0;
+  }
+
+  .name {
+      font-weight: bold;
   }
 
   .test-one,
@@ -402,15 +419,12 @@ body {
       width: 8%;
   }
 
-  .block-five h4 {
-      line-height: 1.5;
-  }
-
   .block-five button {
       height: 43px;
       font-size: 12px;
       font-weight: bold;
       border-radius: 0;
+      max-width: 170px;
   }
 
   .footer {
@@ -430,20 +444,12 @@ body {
       line-height: 1.5;
   }
 
+  .text h4 {
+      font-weight: bold;
+  }
+
   .text-two {
       right: 10%;
-  }
-
-  .input-email {
-      height: 35px;
-  }
-
-  input[type=email]::placeholder {
-      font-size: 12px;
-  }
-
-  .footer-btn {
-      border-radius: 0;
   }
 
   .icon {
@@ -460,10 +466,20 @@ body {
       height: 1px;
   }
 
+  .input-group-append {
+      margin-left: 0;
+  }
+
+  .input-group {
+      width: 80%;
+  }
+
   .footer .copyright {
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 12px;
+      width: 75%;
+      margin: 0 auto;
   }
 
   .copyright .sec-two {
@@ -471,6 +487,7 @@ body {
       border-left: 1px solid #ffffff;
       border-right: 1px solid #ffffff;
       padding: 0 3px 0 3px;
+      height: 18px;
   }
 
 /*****************MEDIA QUERIES******************/
@@ -517,5 +534,59 @@ body {
 
     .footer .container {
         padding-bottom: 50px;
+    }
+
+    .input-group {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+     .block-five button {
+         width: 80%;
+     }
+
+     .block-btn {
+         padding-left: 15%;
+     }
+}
+
+@media (max-width: 576px) {
+    .top-sec{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    .block-btn {
+        padding-left: 10%;
+    }
+
+    .block-five button {
+        width: 150%;
+    }
+
+    .block-one,
+    .block-two,
+    .block-three,
+    .client-row {
+        padding: 0 40px;
+    }
+
+    .footer .copyright {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 435px) {
+    .block-btn {
+        padding-left: 0;
+    }
+    .footer .copyright {
+        font-size: 8px;
     }
 }
