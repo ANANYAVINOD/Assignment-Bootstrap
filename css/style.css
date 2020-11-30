@@ -50,6 +50,14 @@ html,body {
     background:rgba(52,58,69, 0.8);
 }
 
+.top-sec .logo {
+    display: block;
+}
+
+#myCarousel {
+    padding: 5% 10%;
+}
+
 .btn-opacity {
     background-color: transparent;
 }
@@ -519,10 +527,6 @@ html,body {
         text-align: center;
     }
 
-    .top-sec {
-        height: 650px;
-    }
-
     .text-two {
         right: 0;
         padding-bottom: 20px;
@@ -538,6 +542,15 @@ html,body {
 
     .input-group {
         width: 50%;
+    }
+
+    .col-number {
+        border-right: none;
+        text-align: center;
+    }
+
+    .banner{
+        padding-bottom: 20px;
     }
 }
 
@@ -573,7 +586,7 @@ html,body {
     .block-two,
     .block-three,
     .client-row {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     .footer .copyright {
@@ -590,3 +603,4 @@ html,body {
         font-size: 8px;
     }
 }
+
